@@ -1,0 +1,792 @@
+{
+  "data": {
+    "Form1": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Form1",
+            "en-US": "Form1"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "toolbarSaveButton",
+            "name": "Kaydet",
+            "icon": "save",
+            "enabled": true,
+            "caption": {
+              "tr-TR": "Kaydet",
+              "en-US": "Save"
+            }
+          }
+        ],
+        "name": "Form1",
+        "ddl": {
+          "name": "Form1"
+        },
+        "text": {
+          "tr-TR": "Form1",
+          "en-US": "Form1"
+        },
+        "commitId": 0,
+        "controlType": "Form",
+        "controlId": "6a88493b-5ee7-4774-8159-9959e38b49e5",
+        "formType": "parameter"
+      },
+      "viewProperties": {},
+      "id": "Form1",
+      "type": "Form"
+    },
+    "DataGrid1": {
+      "properties": {
+        "clientEvents": [
+          {
+            "name": "OnRowInserted",
+            "methodName": "DataGrid1_OnRowInserted"
+          },
+          {
+            "name": "OnRowUpdated",
+            "methodName": "DataGrid1_OnRowUpdated"
+          }
+        ],
+        "caption": {
+          "text": {
+            "tr-TR": "Şehir ve Koordinatlar"
+          }
+        },
+        "name": "DataGrid1",
+        "ddl": {
+          "name": "DataGrid1"
+        },
+        "commitId": 14,
+        "controlType": "DataGrid",
+        "editing": {
+          "showAddCommand": true,
+          "showEditCommand": true
+        },
+        "controlId": "c8193d08-4d27-8b6f-4d02-db90f02ae1e0",
+        "columns": [
+          {
+            "name": "ID1",
+            "caption": {
+              "tr-TR": "ID"
+            },
+            "width": "25%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "controlType": "NumberBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "ID1",
+                "allowNull": true,
+                "type": "Decimal",
+                "size": 16,
+                "precision": 0
+              },
+              "tabIndex": 0,
+              "text": "",
+              "placeholder": {},
+              "textAlign": "right",
+              "max": 9007199254740991,
+              "step": 1,
+              "precision": 0,
+              "useThousandSeparator": false,
+              "maxLength": 16,
+              "controlId": "ID1",
+              "name": "ID1",
+              "EntityPath": "ID1"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": true,
+            "autoIncrement": true,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "decimal",
+              "columnName": "ID1"
+            },
+            "formatType": {
+              "format": "",
+              "type": "label"
+            },
+            "editType": "numberBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "key": "0"
+          },
+          {
+            "name": "SEHIRLER",
+            "caption": {
+              "tr-TR": "Şehirler"
+            },
+            "width": "25%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "SEHIRLER",
+                "allowNull": true,
+                "size": 50,
+                "type": "String"
+              },
+              "tabIndex": 0,
+              "text": "",
+              "placeholder": {},
+              "textAlign": "left",
+              "maxLength": 50,
+              "isSecretData": false,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "showCharacterCounter": false,
+              "controlId": "SEHIRLER",
+              "name": "SEHIRLER",
+              "EntityPath": "SEHIRLER"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "SEHIRLER"
+            },
+            "formatType": {
+              "format": "",
+              "type": "label"
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "key": "1"
+          },
+          {
+            "name": "ENLEM",
+            "caption": {
+              "tr-TR": "ENLEM"
+            },
+            "width": "25%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "controlType": "NumberBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "ENLEM",
+                "allowNull": true,
+                "type": "Decimal",
+                "size": 16,
+                "precision": 0
+              },
+              "tabIndex": 0,
+              "text": "",
+              "placeholder": {},
+              "textAlign": "right",
+              "max": 9007199254740991,
+              "step": 1,
+              "precision": 0,
+              "useThousandSeparator": false,
+              "maxLength": 16,
+              "controlId": "ENLEM",
+              "name": "ENLEM",
+              "EntityPath": "ENLEM"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "decimal",
+              "columnName": "ENLEM"
+            },
+            "formatType": {
+              "format": "",
+              "type": "label"
+            },
+            "editType": "numberBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "key": "2"
+          },
+          {
+            "name": "BOYLAM",
+            "caption": {
+              "tr-TR": "BOYLAM"
+            },
+            "width": "25%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "controlType": "NumberBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "BOYLAM",
+                "allowNull": true,
+                "type": "Decimal",
+                "size": 16,
+                "precision": 0
+              },
+              "tabIndex": 0,
+              "text": "",
+              "placeholder": {},
+              "textAlign": "right",
+              "max": 9007199254740991,
+              "step": 1,
+              "precision": 0,
+              "useThousandSeparator": false,
+              "maxLength": 16,
+              "controlId": "BOYLAM",
+              "name": "BOYLAM",
+              "EntityPath": "BOYLAM"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "decimal",
+              "columnName": "BOYLAM"
+            },
+            "formatType": {
+              "format": "",
+              "type": "label"
+            },
+            "editType": "numberBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "key": "3"
+          }
+        ]
+      },
+      "viewProperties": {},
+      "id": "DataGrid1",
+      "type": "DataGrid"
+    },
+    "BAGAJ": {
+      "properties": {
+        "readOnly": true,
+        "caption": {
+          "text": {
+            "tr-TR": "Bagaj Ağırlığı"
+          }
+        },
+        "name": "BAGAJ",
+        "ddl": {
+          "name": "BAGAJ"
+        },
+        "commitId": 17,
+        "controlId": "0700e704-ec16-6dc9-48c9-ef47e1f6988a",
+        "controlType": "NumberBox"
+      },
+      "viewProperties": {},
+      "id": "BAGAJ",
+      "type": "NumberBox"
+    },
+    "MIL": {
+      "properties": {
+        "readOnly": true,
+        "caption": {
+          "text": {
+            "tr-TR": "MIL"
+          }
+        },
+        "name": "MIL",
+        "ddl": {
+          "name": "MIL"
+        },
+        "commitId": 3,
+        "controlId": "f51a72b8-f395-e9ce-1c5a-be35bd56dea5",
+        "controlType": "NumberBox"
+      },
+      "viewProperties": {},
+      "id": "MIL",
+      "type": "NumberBox"
+    },
+    "KILOBASIUCRET": {
+      "properties": {
+        "readOnly": true,
+        "caption": {
+          "text": {
+            "tr-TR": "Aşılan Kilo Başı Ücret"
+          }
+        },
+        "name": "KILOBASIUCRET",
+        "ddl": {
+          "name": "KILOBASIUCRET"
+        },
+        "commitId": 36,
+        "controlId": "2e5d3d1e-2eb3-b37b-2816-aa5158966ebc",
+        "controlType": "NumberBox"
+      },
+      "viewProperties": {},
+      "id": "KILOBASIUCRET",
+      "type": "NumberBox"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "Form1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": null,
+            "items": [
+              "Section1"
+            ],
+            "id": "Form1",
+            "type": "Form"
+          },
+          "Section1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column1"
+            ],
+            "id": "Section1",
+            "type": "Section"
+          },
+          "Column1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section1",
+            "items": [
+              "DataGrid1",
+              "BAGAJ",
+              "MIL",
+              "KILOBASIUCRET"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "DataGrid1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "DataGrid1",
+            "type": "DataGrid"
+          },
+          "BAGAJ": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "BAGAJ",
+            "type": "NumberBox"
+          },
+          "MIL": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "MIL",
+            "type": "NumberBox"
+          },
+          "KILOBASIUCRET": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "KILOBASIUCRET",
+            "type": "NumberBox"
+          }
+        },
+        "ghostItems": {}
+      },
+      "result": [
+        "Form1"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 19
+}

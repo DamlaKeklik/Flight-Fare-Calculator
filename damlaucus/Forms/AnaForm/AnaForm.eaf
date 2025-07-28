@@ -1,0 +1,569 @@
+{
+  "data": {
+    "SOYAD": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "SOYAD"
+          }
+        },
+        "name": "SOYAD",
+        "ddl": {
+          "name": "SOYAD"
+        },
+        "commitId": 8,
+        "controlId": "27a72fca-1d4b-09c3-f471-d79da70aee9c",
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "SOYAD",
+      "type": "TextBox"
+    },
+    "AD": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "AD"
+          }
+        },
+        "name": "AD",
+        "ddl": {
+          "name": "AD"
+        },
+        "commitId": 3,
+        "controlId": "9fef625b-0445-c000-19a5-8504db78f58d",
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "AD",
+      "type": "TextBox"
+    },
+    "TOPLAMG": {
+      "properties": {
+        "readOnly": true,
+        "clientEvents": [
+          {
+            "name": "OnValueChanging",
+            "methodName": "TOPLAMG_OnValueChanging"
+          }
+        ],
+        "caption": {
+          "text": {
+            "tr-TR": "TOPLAM"
+          }
+        },
+        "name": "TOPLAMG",
+        "ddl": {
+          "name": "TOPLAMG"
+        },
+        "commitId": 14,
+        "min": 0,
+        "controlType": "NumberBox",
+        "controlId": "7f0e9097-fd66-a313-6198-cfc7cdf7b8a2",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "TOPLAMG",
+      "type": "NumberBox"
+    },
+    "Header1": {
+      "properties": {
+        "name": "Header1",
+        "controlId": "69c61541-ee59-63da-86e6-b802079694de",
+        "controlType": "Header",
+        "caption": {
+          "text": {
+            "tr-TR": "Header1"
+          }
+        },
+        "ddl": {
+          "name": "Header1"
+        },
+        "text": {
+          "tr-TR": "Header1",
+          "en-US": "Header1"
+        }
+      },
+      "viewProperties": {},
+      "id": "Header1",
+      "type": "Header"
+    },
+    "YolcuBilgileri": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "YolcuBilgileri"
+          }
+        },
+        "name": "YolcuBilgileri",
+        "controlId": "b55703c7-5c47-0194-afa4-ec90c0a7855d",
+        "ddl": {
+          "name": "Header1"
+        },
+        "text": {
+          "tr-TR": "Yolcu Bİlgileri",
+          "en-US": "Header1"
+        },
+        "commitId": 14,
+        "controlType": "Header"
+      },
+      "viewProperties": {},
+      "id": "YolcuBilgileri",
+      "type": "Header"
+    },
+    "VARIS": {
+      "properties": {
+        "dataFields": [
+          {
+            "name": "DGID",
+            "type": "number"
+          },
+          {
+            "name": "SEHIRLER",
+            "type": "string"
+          },
+          {
+            "name": "ENLEM",
+            "type": "number"
+          },
+          {
+            "name": "BOYLAM",
+            "type": "number"
+          }
+        ],
+        "clientEvents": [
+          {
+            "name": "OnSelectedItemChanging",
+            "methodName": "VARIS_OnSelectedItemChanging"
+          }
+        ],
+        "dataSource": {
+          "fileId": "<DataSource-sehirler>",
+          "displayExpr": [
+            "SEHIRLER"
+          ],
+          "valueExpr": "DGID",
+          "name": "sehirler",
+          "connectionType": 1,
+          "displayFormat": "{{ SEHIRLER }}"
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "Varış"
+          }
+        },
+        "name": "VARIS",
+        "ddl": {
+          "name": "VARIS"
+        },
+        "iconExpr": "",
+        "commitId": 13,
+        "controlType": "ComboBox",
+        "controlId": "a14cf970-02a3-fb24-a3d7-3c006addbf97",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "VARIS",
+      "type": "ComboBox"
+    },
+    "BAGAJG": {
+      "properties": {
+        "clientEvents": [
+          {
+            "name": "OnValueChanging",
+            "methodName": "BAGAJG_OnValueChanging"
+          }
+        ],
+        "caption": {
+          "text": {
+            "tr-TR": "BAGAJ"
+          }
+        },
+        "name": "BAGAJG",
+        "ddl": {
+          "name": "BAGAJG"
+        },
+        "commitId": 7,
+        "controlId": "2614bce3-c19a-484c-3f78-89c80bc01bac",
+        "required": false,
+        "controlType": "NumberBox"
+      },
+      "viewProperties": {},
+      "id": "BAGAJG",
+      "type": "NumberBox"
+    },
+    "AnaForm": {
+      "properties": {
+        "ddl": {
+          "name": "AnaForm"
+        },
+        "text": {
+          "tr-TR": "AnaForm",
+          "en-US": "AnaForm",
+          "ru-RU": "AnaForm",
+          "az-Latn-AZ": "AnaForm"
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "AnaForm",
+            "en-US": "AnaForm",
+            "ru-RU": "AnaForm",
+            "az-Latn-AZ": "AnaForm"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "toolbarSaveButton",
+            "name": "Kaydet",
+            "icon": "save",
+            "enabled": true,
+            "caption": {
+              "tr-TR": "Kaydet",
+              "en-US": "Save",
+              "ru-RU": "Сохранять",
+              "az-Latn-AZ": "Yadda Saxla"
+            },
+            "validate": false
+          },
+          {
+            "key": "toolbarSaveAsButton",
+            "name": "Farklı Kaydet",
+            "icon": "save-as",
+            "enabled": false,
+            "caption": {
+              "tr-TR": "Farklı Kaydet",
+              "en-US": "Save As",
+              "ru-RU": "Сохранить как",
+              "az-Latn-AZ": "Fərqli Saxla"
+            },
+            "validate": false
+          }
+        ],
+        "name": "AnaForm",
+        "controlId": "f74a2455-9eaa-420f-aee8-eff2b83b7cbc",
+        "controlType": "Form",
+        "rules": {}
+      },
+      "viewProperties": {},
+      "id": "AnaForm",
+      "type": "Form"
+    },
+    "KALKIS": {
+      "properties": {
+        "dataFields": [
+          {
+            "name": "DGID",
+            "type": "number"
+          },
+          {
+            "name": "SEHIRLER",
+            "type": "string"
+          },
+          {
+            "name": "ENLEM",
+            "type": "number"
+          },
+          {
+            "name": "BOYLAM",
+            "type": "number"
+          }
+        ],
+        "clientEvents": [
+          {
+            "name": "OnSelectedItemChanging",
+            "methodName": "KALKIS_OnSelectedItemChanging"
+          }
+        ],
+        "dataSource": {
+          "fileId": "<DataSource-sehirler>",
+          "displayExpr": [
+            "SEHIRLER"
+          ],
+          "valueExpr": "DGID",
+          "name": "sehirler",
+          "connectionType": 1,
+          "displayFormat": "{{ SEHIRLER }}"
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "Kalkış"
+          }
+        },
+        "name": "KALKIS",
+        "ddl": {
+          "name": "KALKIS"
+        },
+        "iconExpr": "",
+        "commitId": 16,
+        "controlType": "ComboBox",
+        "controlId": "07e9d2d9-d72c-f032-28bc-47f03180479c",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "KALKIS",
+      "type": "ComboBox"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "SOYAD": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "SOYAD",
+            "type": "TextBox"
+          },
+          "AD": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "AD",
+            "type": "TextBox"
+          },
+          "TOPLAMG": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column4",
+            "items": [],
+            "id": "TOPLAMG",
+            "type": "NumberBox"
+          },
+          "Section1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "AnaForm",
+            "items": [
+              "Column1"
+            ],
+            "id": "Section1",
+            "type": "Section"
+          },
+          "Section2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "AnaForm",
+            "items": [
+              "Column2",
+              "Column3"
+            ],
+            "id": "Section2",
+            "type": "Section"
+          },
+          "Section3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "AnaForm",
+            "items": [
+              "Column4"
+            ],
+            "id": "Section3",
+            "type": "Section"
+          },
+          "YolcuBilgileri": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "YolcuBilgileri",
+            "type": "Header"
+          },
+          "VARIS": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "VARIS",
+            "type": "ComboBox"
+          },
+          "BAGAJG": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column4",
+            "items": [],
+            "id": "BAGAJG",
+            "type": "NumberBox"
+          },
+          "AnaForm": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": null,
+            "items": [
+              "Section1",
+              "Section2",
+              "Section3"
+            ],
+            "id": "AnaForm",
+            "type": "Form"
+          },
+          "Column1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section1",
+            "items": [
+              "YolcuBilgileri",
+              "AD",
+              "SOYAD"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "Column2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section2",
+            "items": [
+              "KALKIS"
+            ],
+            "id": "Column2",
+            "type": "Column"
+          },
+          "Column3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section2",
+            "items": [
+              "VARIS"
+            ],
+            "id": "Column3",
+            "type": "Column"
+          },
+          "Column4": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section3",
+            "items": [
+              "BAGAJG",
+              "TOPLAMG"
+            ],
+            "id": "Column4",
+            "type": "Column"
+          },
+          "KALKIS": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "KALKIS",
+            "type": "ComboBox"
+          }
+        },
+        "ghostItems": {}
+      },
+      "result": [
+        "AnaForm"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 19
+}
